@@ -1,6 +1,7 @@
 .App {
-  height: 100vh;
-  background-color: rgb(20, 20, 20);
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/payu.webp);
   text-align: center;
   overflow: hidden;
 }
@@ -11,7 +12,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 0 30px 0 30px;
-  color: white;
+  color: rgb(255, 255, 255);
   position: relative;
 }
 
@@ -44,7 +45,6 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  
 }
 .cta-button {
   height: 45px;
@@ -56,21 +56,23 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .connect-wallet-button {
-  color: white;
-  background: -webkit-linear-gradient(left, #ff8867, #ff52ff);
+  color: rgb(255, 255, 255);
+  background: -webkit-linear-gradient(left, #1de616, #0423cf);
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
   max-width: 300px;
 }
 
 .mint-button {
-  background: -webkit-linear-gradient(left, #4e44ce, #35aee2);
+  background: -webkit-linear-gradient(left, #63f393, #35aee2);
   background-size: 200% 200%;
   animation: gradient-animation 4s ease infinite;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 button:disabled {
@@ -83,6 +85,25 @@ button:disabled {
   height: 100px;
 }
 
+img {
+  background-color: #ffffff;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 400px) { 
+  img {
+   width: 70%;
+  }
+  
+}
+@media (max-width: 278px) { 
+  img {
+   width: 40%;
+  }
+  
+}
+
 .footer-container {
   display: flex;
   justify-content: center;
@@ -92,6 +113,7 @@ button:disabled {
   width: 100%;
   bottom: 0;
   left: 0;
+  margin-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -103,7 +125,7 @@ button:disabled {
 .footer-text {
   font-size: 16px;
   font-weight: bold;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .connected-container input[type='text'] {
@@ -125,7 +147,7 @@ button:disabled {
 
 .buy-button {
   border: none;
-  background-color: #4664ff;
+  background-color: #46ff46;
   color: #fff;
   font-size: 16px;
   border-radius: 3px;

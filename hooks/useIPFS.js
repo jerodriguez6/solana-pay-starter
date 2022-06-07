@@ -5,6 +5,7 @@ const useIPFS = (hash, filename) => {
 
   useEffect(() => {
     setFile(`https://gateway.ipfscdn.io/ipfs/${hash}?filename=${filename}`);
+
   }, []);
 
   return file;
